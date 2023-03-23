@@ -1,6 +1,6 @@
 # coding=utf-8
 from bs4 import BeautifulSoup
-from Avito.request import get_html
+from request import get_html
 
 city_with_metro = {"Москва": "moscow",
                    "Санкт-перербург": "spb"}

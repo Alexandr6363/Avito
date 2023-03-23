@@ -2,7 +2,7 @@
 from threading import Thread
 from os import mkdir
 from shutil import rmtree
-from Avito.goods_details import get_goods_details, goods_details
+from goods_details import get_goods_details, goods_details
 import numpy
 
 

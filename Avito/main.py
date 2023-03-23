@@ -1,17 +1,18 @@
 # coding=utf-8
-from Avito.district import get_dict_district
-from Avito.city import cities
-from Avito.links import links_to_product_pages
-from Avito.goods import get_goods
-from Avito.category import get_dict_categories
-from Avito.threads import start_threads
-from Avito.subcategories import get_subcategories
-from Avito.metro import get_metro
-from Avito.proxies import get_proxy
+from district import get_dict_district
+from city import cities
+from links import links_to_product_pages
+from goods import get_goods
+from category import get_dict_categories
+from threads import start_threads
+from subcategories import get_subcategories
+from metro import get_metro
+from proxies import get_proxy
 
 
 def main():
     list_ip = get_proxy()
+    print(list_ip)
 
     city = cities["Ижевск"]  # Вместо "Ижевск", введите нужный Вам город
 

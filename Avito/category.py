@@ -1,8 +1,8 @@
 # coding=utf-8
 from bs4 import BeautifulSoup
 
-from Avito.request import get_html
-from Avito.categories import categories
+from request import get_html
+from categories import categories
 
 
 def get_list_categories(html):
@@ -10,6 +10,7 @@ def get_list_categories(html):
     soup = BeautifulSoup(html, 'lxml')
     elements = soup.find('nav', class_='category-map').find_all('li', class_='category-map-item')
     links = [element.find('a').get('href').split("/")[2] for element in elements]
+    print(links)
     return links
 
 
